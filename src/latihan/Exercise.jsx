@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import UserCard from "./UserCard";
-import { getUsers, getPosts } from "./Services";
+import UserCard from "../UserCard";
+import { getUsers, getPosts } from "../Services";
 import PostCard from "./PostCard";
 
 function Exercise() {

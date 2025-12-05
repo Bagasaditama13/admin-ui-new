@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-function CheckBox() {
+function CheckBox(props) {
+  const { label, id, ...rest } = props;
   return (
     <>
       <input
-                type="checkbox"
-                className="text-sm accent-primary"
-                name="status"
-                id="status"
-              />
-              <label htmlFor="status" className="text-sm text-gray-01 ml-6">
-                Keep me signed in
-              </label>
+        className="text-sm accent-primary"
+        id={id}
+        {...rest}
+      />
+      <label htmlFor={id} className="text-sm text-gray-01">
+        {label}
+      </label>
     </>
-  )
+  );
 }
-
-export default CheckBox
+export default CheckBox;
+CheckBox;
